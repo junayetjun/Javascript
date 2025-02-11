@@ -4,41 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<style>
+   
+fieldset{
+   width: 5%;
+   height: 40vh;
+   margin-left: 34%;
+   margin-top: 28vh;
+}
+label{
+   color: blueviolet;
+}
+
+
+
+.cooler:hover{
+   background-color: rgb(192, 130, 207);
+color: aliceblue;
+
+
+}
+label:hover{
+   background-color: black;
+   color: white;
+}
+
+
+
+</style>
+
+
+
+
+
 </head>
 <body>
-    
-    <label for="">First Row</label><br>
-    <input type="text" id="firstrow"><br>
-<label for="">Second Row</label><br>
-<input type="text" id="secondrow"><br>
-<br>
-<input type="button" value="+" onclick="sum()">
-<input type="button" value="-" >
-<input type="button" value="x" >
-<input type="button" value="/" >
-<br><br>
-<input type="text" name="" id="result">
+<fieldset>
+   
+      <label for=""><strong>First Row</strong></label><br>
+      <input type="text" name="" id="firstrow" class="cooler"><br>
+      <br>
+      <label for=""><strong>Second Row</strong></label> <br>
+      <input type="text" id="secondrow" class="cooler"><br>
+      <br>
+      <input type="button" value="+"  onclick="sum()">
+      <input type="button" value="-" onclick="sub()">
+      <input type="button" value="%"  onclick="percentage()">
+      <input type="button" value="x" onclick="div()">
+      <br>
+      <br>
+      <input type="text" id="result" class="cooler">
+      <br>
+   
+</fieldset>
+  
+   
+
+   <script>
+
+function sum(){
+let firstRow= parseFloat(document.getElementById("firstrow").value);
+let secondRow= parseFloat(document.getElementById("secondrow").value);
+let sum= firstRow + secondRow;
+document.getElementById('result').value=sum;
 
 
- 
- <script>
-function sum() {
+}
+function sub(){
+let firstRow= parseFloat(document.getElementById("firstrow").value);
+let secondRow= parseFloat(document.getElementById("secondrow").value);
+let sum= firstRow - secondRow;
+document.getElementById('result').value=sum;
 
-let firstRow = parseFloat(document.getElementById("firstrow").value);
-let secondRow = parseFloat(document.getElementById("secondrow").value);
-let sum= firstrow + secondrow;
-document.getElementById("result").value = sum;
+
+}
+function percentage(){
+let firstRow= parseFloat(document.getElementById("firstrow").value);
+let secondRow= parseFloat(document.getElementById("secondrow").value);
+let sum= firstRow / secondRow;
+document.getElementById('result').value=sum;
+
+
+}
+function div(){
+let firstRow= parseFloat(document.getElementById("firstrow").value);
+let secondRow= parseFloat(document.getElementById("secondrow").value);
+let sum= firstRow * secondRow;
+document.getElementById('result').value=sum;
+
 
 }
 
 
 
-
-
- </script>
-
-
- 
+   </script>
+   
 
 
 
