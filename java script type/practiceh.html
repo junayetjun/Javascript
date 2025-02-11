@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <label for="">First Row</label><br>
+    <input type="text" id="firstrow"><br>
+<label for="">Second Row</label><br>
+<input type="text" id="secondrow"><br>
+<br>
+<input type="button" value="+" onclick="sum()">
+<input type="button" value="-" >
+<input type="button" value="x" >
+<input type="button" value="/" >
+<br><br>
+<input type="text" name="" id="result">
+
+
+ 
+ <script>
+function sum() {
+
+let firstRow = parseFloat(document.getElementById("firstrow").value);
+let secondRow = parseFloat(document.getElementById("secondrow").value);
+let sum= firstrow + secondrow;
+document.getElementById("result").value = sum;
+
+}
+
+
+
+
+
+ </script>
+
+
+ 
+
+
+
+</body>
+</html>
