@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    input:hover{
+        background-color: aliceblue;
+    }
+</style>
+
+
+</head>
+
+<body>
+   <fieldset style="width: 10%; height: 50vh;">
+    <label for="">First Number</label><br>
+    <br>
+    <input type="text" id="number1" ><br>
+    <br>
+    <label for="">Second Number</label><br>
+    <br>
+    <input type="text" id="number2"><br>
+    <br>
+    <label for="">Third Number</label><br>
+    <br>
+    <input type="text" id="number3"><br>
+<br>
+<button type="button" value=">" onclick="math()" class="size"><strong>The Max number is given below:</strong></button><br>
+<br>
+<!-- <label for="">This is the Max number.</label><br> -->
+<input type="text" id="result">
+   </fieldset>
+
+
+
+
+    <script>
+function math(){
+    let numberOne = parseInt(document.getElementById("number1").value);
+    let numberTwo = parseInt(document.getElementById("number2").value);
+    let numberThree = parseInt(document.getElementById("number3").value);
+
+        if (numberOne >= numberTwo && numberOne>=numberThree ) {
+            document.getElementById("result").value = numberOne ;
+        
+        }
+        else if((numberTwo >= numberOne && numberTwo>=numberThree ) ){
+            document.getElementById("result").value = numberTwo ;
+
+        }
+        else {
+
+            document.getElementById("result").value = numberThree ;
+           
+        }
+}
+
+
+
+        // let input = prompt("Enter a number to check Odd or Even");
+        // if (! (input % 2==0)) {
+        //     document.write(input+' is a Odd number. ');
+
+        // }
+        // else{
+        //     document.write(input+' is a Even number. ');
+        // }
+
+
+        // let input1 = parseInt(prompt("Put the first number. "));
+        // let input2 = parseInt(prompt("Put the second number. "));
+
+        // if (input1 >= input2) {
+        //     document.write(input1 + ' is a Max number');
+        
+        // }
+
+        // else {
+
+        //     document.write(input2 + ' is a Max number');
+
+        // }
+
+    </script>
+</body>
+
+</html>
