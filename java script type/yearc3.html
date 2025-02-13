@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let year1 = parseInt(prompt('Put the number'))
+        if (year1 % 4 == 0) {
+            //  document.write(year1 +' is Leap year.')
+
+            if (year1 % 100 == 0) {
+                // document.write(year1 + ' is not Leap year.')
+                if (year1 % 400 == 0) {
+                    document.write(year1 +' is Leap year.')
+
+                }
+                else {
+                    document.write(year1 + ' is not Leap year.')
+                
+                }
+            }
+            else {
+                document.write(year1 + ' is Leap year.')
+            }
+
+        }
+
+        else {
+
+            document.write(year1 + ' is not Leap year.')
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>
