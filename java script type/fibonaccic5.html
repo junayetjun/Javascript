@@ -1,25 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
+        // first way to find the fibonacci number.
+        let fibonacci = parseInt(prompt('Enter the number.'));
+        let a = 0;
+        let b = 1;
+        for (let i =0; i <= fibonacci; i++) {
+            let temp = a + b;//1
+            a = b;//1
+            b = temp;//1+1
+            document.write(temp + ', ');
+        }
 
-let fibonacci = parseInt(prompt('Enter the number.'));
-let a =0, b=1;
- 
-for(let i = 0; i<=fibonacci; i++){
-    let temp = a+b;
-    a = b ;
-    b = temp;
-    document.write(temp+ ', ');
-}
+
+
+        // let n = parseInt(prompt('Enter limit'));
+        // let n1 = 0;
+        // let n2 = 1;
+        // let sum = 0;
+        // let result =0;
+        // // document.write(n1 + '<br>');
+        // // document.write(n2 + '<br>');
+        // for (let i = 1; i <= n; i++) {
+        //     sum = n1 + n2;
+        //     document.write(sum + '<br>');
+        //     n1 = n2;
+        //     n2 = sum;
+        //     result+= sum;
+
+
+        // }
+        // document.write(result);
+
 
     </script>
 
 
 </body>
+
 </html>
