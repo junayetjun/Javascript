@@ -9,15 +9,15 @@
 
 <body>
     <script>
-        let prom1 =parseInt( prompt('Enter Size'));
+        let prom1 = parseInt(prompt('Enter Size'));
         let sum = 0;
 
         for (let i = 1; i <= prom1; i++) {
-            let input = parseInt(prompt('Enter the Value'));
+            let input = parseInt(prompt('Enter ' + i  + ' Value'));
             sum += input;
 
-
         }
+
         document.write(sum);
 
 

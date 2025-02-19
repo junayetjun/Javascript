@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- this html is for connect to js with html file. and open a page  -->
+    <form action="">
+        <label for="">ID</label><br>
+        <input type="text" id="idna"><br>
+        <label for="">Name</label><br>
+        <textarea name="" id="name" cols="9" rows="3"></textarea><br>
+        <!-- <label for="">Gender</label><br>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> female <br> <br> -->
+        <button type="button" value="submit" onclick="clickBy()">Submit</button>
+        <!-- <button type="reset" value="reset">Reset</button> -->
+
+        <script>
+
+           function clickBy(){
+            let id = document.getElementById("idna").value;
+            let name = document.getElementById("name").value;
+
+            let output= "ID: "+ id + "<br>"+ "Name: "+ name +'<br>';
+            
+            let newWindow= window.open("",'_blank');
+            newWindow.document.write(output);
+
+           }
+
+
+
+
+
+
+
+
+        </script>
+
+
+
+    </form>
+</body>
+
+</html>
