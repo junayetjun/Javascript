@@ -14,13 +14,13 @@
         <label for="">Email</label><br>
         <input type="email" id="email"><br>
         <label for="">Gender</label><br>
-        <input type="radio" name="gender"> Male
-        <input type="radio" name="gender"> Female <br>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female <br>
         <label for="">Hobby</label><br>
-        <input type="checkbox"> coding
-        <input type="checkbox"> Writing
-        <input type="checkbox"> Singing
-        <input type="checkbox"> Travelling <br>
+        <input type="checkbox" name="hobby" value="Coding"> coding
+        <input type="checkbox" name="hobby" value="Writing"> Writing
+        <input type="checkbox" name="hobby" value="Singing"> Singing
+        <input type="checkbox" name="hobby" value="Travelling"> Travelling <br>
         <label for="">Subject</label> <br>
         <select name="" id="subject">
             <option value="#">--Select One--</option>
@@ -29,7 +29,7 @@
             <option value="JS">JS</option>
         </select> <br>
         <br>
-        <input type="button" value="Submit">
+        <input type="button" value="Submit" onclick="formDataSend()">
 
 
     </form>
